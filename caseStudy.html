@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="UX, User Experience, , UXR, UX Research, Portfolio">
+    <meta name="description" content="Jesse Irwin's UX Research Portfolio">
+    <meta name="author" content="Jesse Irwin">
+    <title>Jesse Irwin</title>
+    <link rel="icon" type="image/x-icon" href="img/logo.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Nav Bar --->
+    <nav class="navbar navbar-expand-sm bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="img/logo.svg" style="width:40px;height:auto;" alt="Jesse's logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0" >
+            <li class="nav-item">
+              <a class="nav-link active" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="resumeJesseIrwin.pdf" target="_blank">Resume</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+
+    <!-- Case Study -->
+    <section class="container" style="max-width:1200px;">
+      <figure class="figure mb-4">
+        <a href="#convoTreeModal" role="button" data-bs-toggle="modal">
+        <img class="figure-img img-fluid img-thumbnail zoom-in" src="img/bucket/conversationTree-sm.jpg" alt="Our conversation tree"></a>
+        <figcaption class="figure-caption text-center">The conversation tree that we used to guide our interviews.</figcaption>
+      </figure>
+        
+      <!-- Image Enlarge Modal -->
+      <div class="modal fade" id="convoTreeModal" tabindex="-1" aria-labelledby="convoTreeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="convoTreeModalLabel">Our Conversation Tree</h5>
+          <!--<button type="button" class="btn btn-primary px-3 mx-1" onclick="zoomin()">+</button>
+              <button type="button" class="btn btn-primary px-3 mx-1" onclick="zoomout()">-</button>-->
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="embed-responsive embed-responsive-4by3 modal-body">
+              <div id="myWindow" class="embed-responsive-item myWindow">
+                <img id="myContent" class=" myContent" src="img/bucket/conversationTree-lg.jpg" alt="Our conversation tree" >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    
+    <!-- Contact Me -->
+    <section class="py-5 text-start container" style="max-width:1200px;">
+      <div class="row py-lg-5">
+        <h2>Contact Me</h2>
+        <p>If I can do anything for you, or if you are interested in working together, please connect with me through
+          <a href="#">LinkedIn</a> or <a href="#">email</a>.
+        </p>
+      </div>
+    </section>
+    
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-muted py-5">
+        <div class="container">
+          <p class="float-end mb-1">
+            <a href="#">Back to top</a>
+          </p>
+          <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
+          <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a href="../getting-started/introduction/">getting started guide</a>.</p>
+        </div>
+    </footer>
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> 
+
+</body>
+</html>
