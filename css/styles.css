@@ -71,6 +71,22 @@ a {
   font-size: 16px;
 }
 
+.list-purple {
+  list-style-type: none;
+}
+
+.list-purple li {
+  padding-bottom: 1rem;
+}
+
+.list-purple li::before {
+  content: "\25CF";
+  color: rgba(101, 32, 245, 1);
+  display: inline-block;
+  width: .75em; 
+  margin-left: -1em; 
+}
+
 .thumbnail {
   max-width: 32px;
   height: auto;
@@ -224,21 +240,6 @@ a {
 
 .emoji-list li::before {
   content:'\270F';
-  padding-right: 1rem;
-}
-
-.emoji-rocket-list {
-  list-style: none;
-}
-
-.emoji-rocket-list li {
-  padding-left: 2.5rem;
-  text-indent: -3.9rem;
-  padding-bottom: 1rem;
-}
-
-.emoji-rocket-list li::before {
-  content:'\1F680';
   padding-right: 1rem;
 }
 
