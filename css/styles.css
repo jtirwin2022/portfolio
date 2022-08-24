@@ -158,6 +158,7 @@ a {
   box-shadow: -7px 7px rgba(101, 32, 245, 1);
   padding: 16px 24px 8px 16px;
   margin: 16px auto 24px;
+  max-width: 700px;
 }
 
 .callout-black-shadow {
@@ -165,6 +166,7 @@ a {
   box-shadow: -7px 7px #211D1D;
   padding: 16px 24px 8px 16px;
   margin: 16px auto 24px;
+  max-width: 700px;
 }
 
 .callout-purple-shadow {
@@ -172,6 +174,7 @@ a {
   box-shadow: -7px 7px rgba(139, 28, 213, 1);
   padding: 16px 24px 8px 16px;
   margin: 16px auto 24px;
+  max-width: 700px;
 }
 
 .stickyscrollspy {
@@ -212,7 +215,6 @@ a {
 
 .emoji-list {
   list-style: none;
- 
 }
 
 .emoji-list li {
@@ -222,6 +224,21 @@ a {
 
 .emoji-list li::before {
   content:'\270F';
+  padding-right: 1rem;
+}
+
+.emoji-rocket-list {
+  list-style: none;
+}
+
+.emoji-rocket-list li {
+  padding-left: 2.5rem;
+  text-indent: -3.9rem;
+  padding-bottom: 1rem;
+}
+
+.emoji-rocket-list li::before {
+  content:'\1F680';
   padding-right: 1rem;
 }
 
