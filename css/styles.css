@@ -6,6 +6,10 @@ p, li {
   font-size: 18px;
 }
 
+h2 {
+  font-size: 26px;
+}
+
 h3 {
   font-size: 24px;
 }
@@ -362,4 +366,9 @@ body, nav {
   color: #211D1D;
   font-size: 18px;
   font-weight: 500;
+}
+
+#cover-img-livelii {
+  border: 8px solid #ededed;
+  border-radius: 16px;
 }
