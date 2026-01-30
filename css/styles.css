@@ -26,8 +26,31 @@ a {
   color: #2B20F5;
 }
 
+.heading-subtitle {
+  font-weight: 500;
+}
+
 body, nav {
   background-color: #fcfcfc;
+}
+
+.grid-summary {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.grid-summary p {
+    font-size: 16px;
+}
+
+.grid-summary > div {
+    background: #f3f4f4;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+#professional-experience .grid-summary {
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .nav-link-custom {
