@@ -6,12 +6,16 @@ p, li {
   font-size: 18px;
 }
 
+.compact p {
+  margin-bottom:5px;
+}
+
 h2 {
   font-size: 26px;
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 22px;
 }
 
 h4 {
@@ -40,7 +44,11 @@ body, nav {
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
-  }
+}
+
+#featured-projects .d-flex {
+  gap: 30px;
+}
 
 @media (min-width: 768px) {
   .bd-placeholder-img-lg {
