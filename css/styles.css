@@ -15,7 +15,7 @@ h2 {
 }
 
 h3 {
-  font-size: 22px;
+  font-size: 20px;
 }
 
 h4 {
@@ -34,9 +34,13 @@ body, nav {
   background-color: #fcfcfc;
 }
 
+.navbar > .container > .row {
+  width: 100%;
+}
+
 .grid-summary {
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    gap: 20px;
 }
 
 .grid-summary p {
@@ -44,13 +48,26 @@ body, nav {
 }
 
 .grid-summary > div {
-    background: #f3f4f4;
+    background: #f4f4f4;
     padding: 30px;
     border-radius: 12px;
 }
 
+.project-grid {
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.project-grid-table {
+  grid-template-columns: 1fr 2fr;
+}
+
 #professional-experience .grid-summary {
   grid-template-columns: 1fr 1fr 1fr;
+}
+
+.nav-pills > button {
+  text-align: left;
 }
 
 .nav-link-custom {

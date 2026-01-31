@@ -3,35 +3,39 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="UX, User Experience, Front End Development, UXR, UX Research, Portfolio">
-    <meta name="description" content="Jesse Irwin's UX Research Portfolio">
+    <meta name="keywords" content="UX, User Experience, Front End Development, Back End Development, Full Stack Development, UXR, UX Research, Portfolio">
+    <meta name="description" content="Hi, I'm Jesse, a web developer and interaction designer in the digital marketing space.">
     <meta name="author" content="Jesse Irwin">
-    <title>Jesse Irwin</title>
-    <link rel="icon" type="image/x-icon" href="img/logo.svg">
+    <title>Jesse Irwin's Portfolio | Web Developer | Interaction Designer</title>
+    <link rel="icon" type="image/x-icon" href="/img/logo.svg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet">
   </head>
   <body>
     <!-- Nav Bar --->
     <header class="sticky-top">
       <nav class="navbar navbar-expand-sm navbar-light border-bottom">
         <div class="container">
-          <a class="navbar-brand" href="index.html"><img src="img/logo.svg" style="width:40px;height:auto;" alt="Jesse's logo"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="navbar-collapse collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav ms-auto mt-2 mb-2 mb-lg-0">
-              <li class="nav-item ">
-                <a class="nav-link nav-link-custom active" href="projects.html">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-link-custom" href="about.html">About</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link nav-link-custom" href="resumeJesseIrwin.pdf" target="_blank">Resume</a>
-              </li>
-            </ul>
+          <div class="row">
+            <div class="col-xs-12">
+              <a class="navbar-brand" href="/"><img src="/img/logo.svg" style="width:40px;height:auto;" alt="Jesse's logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="navbar-collapse collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ms-auto mt-2 mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link nav-link-custom active" href="/projects">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-link-custom" href="/about">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link nav-link-custom" href="/resumeJesseIrwin.pdf" target="_blank">Resume</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </nav>
@@ -40,145 +44,134 @@
     <main>
 
       <!-- Project Cards -->
-      <section class="album pt-3 pb-5">      
+      <section id="projects" class="album pt-3 pb-5">      
         <div class="container mx-auto">
-          <h2 class="mb-3">Featured Projects</h2>
-          <div class="card card-custom mb-3">
-            <div class="row g-0">
-              <div class="col-md-4 card-img-div">
-                <img src="img/livelii/cover2.png" class="rounded-start card-img-custom" alt="Image from the Livelii dashboard screen">
+          <h2 class="mb-3">Projects</h2>
+          <div class="d-grid project-grid">
+            <div class="card card-custom mb-3">
+              <div class="row g-0">
+                <div class="col-xs-12 card-img-div">
+                  <img src="img/livelii/cover2.png" class="rounded-start card-img-custom" alt="Image from the Livelii dashboard screen">
+                </div>
+                <div class="col-xs-12">
+                  <div class="card-body">
+                    <h4 class="card-title pt-3">Admin console for a messaging platform</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p class="card-text pb-3"><a class="stretched-link" href="projects/admin-console" style="text-decoration:none;">Read More</a></p>
+                  </div>
+                </div>
               </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h4 class="card-title pt-3">Admin console for a messaging platform</h4>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  <p class="card-text pb-3"><a class="stretched-link" href="projects/admin-console.html" style="text-decoration:none;">Read More</a></p>
+            </div>
+            <div class="card card-custom mb-3">
+              <div class="row g-0">
+                <div class="col-xs-12 card-img-div">
+                  <img src="img/livelii/cover2.png" class="rounded-start card-img-custom" alt="Image from the Livelii dashboard screen">
+                </div>
+                <div class="col-xs-12">
+                  <div class="card-body">
+                    <h4 class="card-title pt-3">CAPTCHA reliability improvements in CMS</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p class="card-text pb-3"><a class="stretched-link" href="projects/captcha" style="text-decoration:none;">Read More</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card card-custom mb-3">
+              <div class="row g-0">
+                <div class="col-xs-12 card-img-div">
+                  <img src="img/livelii/cover2.png" class="rounded-start card-img-custom" alt="Image from the Livelii dashboard screen">
+                </div>
+                <div class="col-xs-12">
+                  <div class="card-body">
+                    <h4 class="card-title pt-3">Entity-based schema implementation for AI Search Visibility</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p class="card-text pb-3"><a class="stretched-link" href="projects/schema" style="text-decoration:none;">Read More</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card card-custom mb-3">
+              <div class="row g-0">
+                <div class="col-xs-12 card-img-div">
+                  <img src="img/livelii/cover2.png" class="rounded-start card-img-custom" alt="Image from the Livelii dashboard screen">
+                </div>
+                <div class="col-xs-12">
+                  <div class="card-body">
+                    <h4 class="card-title pt-3">Custom web app: financial aid calculator</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p class="card-text pb-3"><a class="stretched-link" href="/projects/financial-aid-calculator" style="text-decoration:none;">Read More</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card card-custom mb-3">
+              <div class="row g-0">
+                <div class="col-xs-12 card-img-div">
+                  <img src="img/livelii/cover2.png" class="rounded-start card-img-custom" alt="Image from the Livelii dashboard screen">
+                </div>
+                <div class="col-xs-12">
+                  <div class="card-body">
+                    <h4 class="card-title pt-3">@-Mention system for project discussions</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p class="card-text pb-3"><a class="stretched-link" href="projects/mentions" style="text-decoration:none;">Read More</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card card-custom mb-3">
+              <div class="row g-0">
+                <div class="col-xs-12 card-img-div">
+                  <img src="img/livelii/cover2.png" class="rounded-start card-img-custom" alt="Image from the Livelii dashboard screen">
+                </div>
+                <div class="col-xs-12">
+                  <div class="card-body">
+                    <h4 class="card-title pt-3">Technical writing: CRM and CMS documentation</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p class="card-text pb-3"><a class="stretched-link" href="projects/technical-writing" style="text-decoration:none;">Read More</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card card-custom mb-3">
+              <div class="row g-0">
+                <div class="col-xs-12 card-img-div">
+                  <img src="img/livelii/cover2.png" class="rounded-start card-img-custom" alt="Image from the Livelii dashboard screen">
+                </div>
+                <div class="col-xs-12">
+                  <div class="card-body">
+                    <h4 class="card-title pt-3">Custom Looker Studio analytics dashboard</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p class="card-text pb-3"><a class="stretched-link" href="projects/looker-studio" style="text-decoration:none;">Read More</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card card-custom mb-3">
+              <div class="row g-0">
+                <div class="col-xs-12 card-img-div">
+                  <img src="img/livelii/cover2.png" class="rounded-start card-img-custom" alt="Image from the Livelii dashboard screen">
+                </div>
+                <div class="col-xs-12">
+                  <div class="card-body">
+                    <h4 class="card-title pt-3">Web build from start to finish&mdash;Zephron</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p class="card-text pb-3"><a class="stretched-link" href="projects/zephron" style="text-decoration:none;">Read More</a></p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="container mx-auto">
-          <div class="card card-custom mb-3">
-            <div class="row g-0">
-              <div class="col-md-4 card-img-div">
-                <img src="img/livelii/cover2.png" class="rounded-start card-img-custom" alt="Image from the Livelii dashboard screen">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h4 class="card-title pt-3">CAPTCHA reliability improvements in CMS/h4>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  <p class="card-text pb-3"><a class="stretched-link" href="projects/captcha.html" style="text-decoration:none;">Read More</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="container mx-auto">
-          <div class="card card-custom mb-3">
-            <div class="row g-0">
-              <div class="col-md-4 card-img-div">
-                <img src="img/livelii/cover2.png" class="rounded-start card-img-custom" alt="Image from the Livelii dashboard screen">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h4 class="card-title pt-3">Entity-based schema implementation for AI Search Visibility</h4>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  <p class="card-text pb-3"><a class="stretched-link" href="projects/schema.html" style="text-decoration:none;">Read More</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="container mx-auto">
-          <div class="card card-custom mb-3">
-            <div class="row g-0">
-              <div class="col-md-4 card-img-div">
-                <img src="img/livelii/cover2.png" class="rounded-start card-img-custom" alt="Image from the Livelii dashboard screen">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h4 class="card-title pt-3">Custom web app: financial aid calculator</h4>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  <p class="card-text pb-3"><a class="stretched-link" href="/projecs/financial-aid-calculator.html" style="text-decoration:none;">Read More</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="container mx-auto">
-          <div class="card card-custom mb-3">
-            <div class="row g-0">
-              <div class="col-md-4 card-img-div">
-                <img src="img/livelii/cover2.png" class="rounded-start card-img-custom" alt="Image from the Livelii dashboard screen">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h4 class="card-title pt-3">@-Mention system for project discussions</h4>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  <p class="card-text pb-3"><a class="stretched-link" href="projects/mentions.html" style="text-decoration:none;">Read More</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="container mx-auto">
-          <div class="card card-custom mb-3">
-            <div class="row g-0">
-              <div class="col-md-4 card-img-div">
-                <img src="img/livelii/cover2.png" class="rounded-start card-img-custom" alt="Image from the Livelii dashboard screen">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h4 class="card-title pt-3">Technical writing: CRM and CMS documentation</h4>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  <p class="card-text pb-3"><a class="stretched-link" href="projects/technical-writing.html" style="text-decoration:none;">Read More</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="container mx-auto">
-          <div class="card card-custom mb-3">
-            <div class="row g-0">
-              <div class="col-md-4 card-img-div">
-                <img src="img/livelii/cover2.png" class="rounded-start card-img-custom" alt="Image from the Livelii dashboard screen">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h4 class="card-title pt-3">Custom Looker Studio analytics dashboard</h4>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  <p class="card-text pb-3"><a class="stretched-link" href="projects/looker-studio.html" style="text-decoration:none;">Read More</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="container mx-auto">
-          <div class="card card-custom mb-3">
-            <div class="row g-0">
-              <div class="col-md-4 card-img-div">
-                <img src="img/livelii/cover2.png" class="rounded-start card-img-custom" alt="Image from the Livelii dashboard screen">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h4 class="card-title pt-3">Web build from start to finish&mdash;Zephron</h4>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  <p class="card-text pb-3"><a class="stretched-link" href="projects/zephron.html" style="text-decoration:none;">Read More</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <p class="mt-4">
-            <a class="btn btn-outline-blue" href="projects.html">View all projects</a>
-          </p>
         </div>
       </section>
 
       <!-- Contact Me -->
       <section id="contact" class="py-5 text-start container">
         <div class="row py-lg-5">
-          <div class="col-lg-8 col-md-8 mx-auto"  style="max-width:900px;">
+          <div class="col-lg-2">
             <h2 class="color-custom-black">Contact Me</h2>
-            <p class="color-custom-black" style="font-size:22px;">I'm always excited to talk about work. 
-              And I'd love to bring that excitement to your team. To chat further please contact me
-              through
-              <a href="https://www.linkedin.com/in/jesse-irwin-84019861/" target="_blank">LinkedIn</a>
-              or <a href="mailto:jesse.t.irwin@gmail.com">email</a>.
+          </div>
+           <div class="col-lg-10 mx-auto">
+              <p class="color-custom-black" style="font-size:22px;">I'm always excited to talk about work. And I'd love to bring that excitement to your team. To chat further please contact me through <a href="https://www.linkedin.com/in/jesse-irwin-84019861/" target="_blank">LinkedIn</a> or <a href="mailto:jesse.t.irwin@gmail.com">email</a>.</p>
           </div>
         </div>
       </section>
@@ -189,12 +182,12 @@
     <footer class="container">
       <div class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
         <div class="col-md-4 d-flex align-items-center">
-          <span class="mb-3 mb-md-0 text-muted">© 2022 Jesse Irwin</span>
+          <span class="mb-3 mb-md-0 text-muted">© 2026 Jesse Irwin</span>
         </div>
         <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li class="ms-3"><a class="text-muted" href="mailto:jesse.t.irwin@gmail.com"><img class="bi" width="24" height="24" src="img/socials/email.png"></a></li>
-          <li class="ms-3"><a class="text-muted" href="https://github.com/jtirwin2022"><img class="bi" width="24" height="24" src="img/socials/GitHub-Mark-32px.png"></a></li>
-          <li class="ms-3"><a class="text-muted" href="https://www.linkedin.com/in/jesse-irwin-84019861/"><img class="bi" width="24" height="24" src="img/socials/LI-In-Bug.png"></a></li>
+          <li class="ms-3"><a class="text-muted" href="mailto:jesse.t.irwin@gmail.com"><img class="bi" width="24" height="24" src="/img/socials/email.png"></a></li>
+          <li class="ms-3"><a class="text-muted" href="https://github.com/jtirwin2022"><img class="bi" width="24" height="24" src="/img/socials/GitHub-Mark-32px.png"></a></li>
+          <li class="ms-3"><a class="text-muted" href="https://www.linkedin.com/in/jesse-irwin-84019861/"><img class="bi" width="24" height="24" src="/img/socials/LI-In-Bug.png"></a></li>
         </ul>
       </div>
     </footer>
