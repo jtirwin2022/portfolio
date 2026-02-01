@@ -16,6 +16,7 @@ h2 {
 
 h3 {
   font-size: 20px;
+  margin-bottom: 15px;
 }
 
 h4 {
@@ -87,7 +88,23 @@ body, nav {
 }
 
 #featured-projects .d-flex {
-  gap: 30px;
+  gap: 20px;
+}
+
+.carousel {
+    padding-bottom: 60px;
+}
+.carousel button {
+    top: unset;
+    justify-content: start;
+    width: fit-content;
+}
+.carousel .carousel-control-prev {
+    left: unset;
+    right: 60px;
+}
+.carousel .carousel-item .compact {
+    padding-right: 40px;
 }
 
 @media (min-width: 768px) {
