@@ -18,7 +18,7 @@
         <div class="container">
           <div class="row">
             <div class="col-xs-12 d-flex ps-4">
-              <a class="navbar-brand" href="/"><img src="img/logo.svg" style="width:40px;height:auto;" alt="Jesse's logo"></a>
+              <a class="navbar-brand" href="/"><img src="/img/logo.svg" style="width:40px;height:auto;" alt="Jesse's logo"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -41,76 +41,93 @@
       </nav>
     </header>
 
-    <main>
+  <main>
 
-      <!-- Project Description -->
-      <section class="py-5 container" style="max-width:900px;">
-        <div class="row mx-auto">
-          <div class="project-image">
-            <img src="img/livelii/cover2.png" class="rounded-start card-img-custom" alt="Image from the Livelii dashboard screen">
-          </div>
-          <div class="col-xs-12 pe-4 pt-3">
-            <h1>CAPTCHA reliability improvements in CMS</h1>
-            <p>Clients reported form submission issues caused by inaccurate reCAPTCHA v3 scoring, including legitimate users being blocked and spam still getting through. This project focused on improving CAPTCHA reliability by changing when and how CAPTCHA validation was evaluated. Updates included moving reCAPTCHA evaluation to form submission and adding support for hCaptcha as an alternative provider.</p>
-          </div>
-          <div class="col-xs-12 pe-4 pt-3">
-            <h2>CMS Architecture</h2>
-            <p>The CMS is a server-side rendered PHP application using an MVC pattern.</p>
-            <ul>
-                <li>Features are built as modular “cells,” each with its own controller, view, and frontend assets.</li>
-                <li>Forms are rendered on the server, with JavaScript added only where needed to enhance interactivity.</li>
-                <li>Configuration and third-party integrations like CAPTCHA are managed through a centralized registry.</li>
-            </ul>
-          </div>
-          <div class="col-xs-12 pe-4 pt-3">
-            <h2>Languages and Technologies</h2>
-            <ul>
-                <li>JavaScript</li>
-                <li>PHP</li>
-                <li>HTML</li>
-            </ul>
-          </div>
-          <div class="col-xs-12 pe-4 pt-3">
-            <h2>Development Process</h2>
-            <ul>
-                <li>Reviewed client reports and reproduced form submission issues on a staging environment.</li>
-                <li>Researched Google reCAPTCHA documentation to better understand token behavior, scoring, and recommended implementation patterns.</li>
-                <li>Updated form modules so reCAPTCHA v3 evaluation occurred on form submission instead of page load.</li>
-                <li>Improved action naming to give reCAPTCHA more specific context per form.</li>
-                <li>Implemented optional support for hCaptcha.</li>
-                <li>Tested changes on staging and deployed updates to the shared CMS codebase.</li>
-            </ul>
-          </div>
-          <div class="col-xs-12 pe-4 pt-3">
-            <h2>Challenges and Solutions</h2>
-            <p><strong>Challenge:</strong>Challenge: Legitimate users were failing CAPTCHA due to low scores or expired tokens.<br>
-            <strong>Solution:</strong>Solution: Identified that tokens were generated on page load and expired before submission; moved evaluation to the submit event.</p>
-            <p><strong>Challenge:</strong>Challenge: reCAPTCHA scoring lacked accuracy across different forms.<br>
-            <strong>Solution:</strong>Solution: Replaced a generic action name with form-specific actions to give reCAPTCHA more granular data.</p>
-            <p><strong>Challenge:</strong>Challenge: Working in an unfamiliar part of the CMS codebase.<br>
-            <strong>Solution:</strong>Solution: Traced the full request flow across controllers, views, and JavaScript to understand where CAPTCHA logic belonged.</p>
-          </div>
+    <!-- Project Description -->
+    <section class="py-5 container" style="max-width:900px;">
+      <div class="row mx-auto">
+        <div class="project-image">
+          <img src="img/livelii/cover2.png" class="rounded-start card-img-custom"
+            alt="Image from the Livelii dashboard screen">
         </div>
-      </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="container">
-      <div class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <div class="col-md-4 d-flex align-items-center">
-          <span class="mb-3 mb-md-0 text-muted">© 2026 Jesse Irwin</span>
+        <div class="col-xs-12 pe-4 pt-3">
+          <h1>CAPTCHA reliability improvements in CMS</h1>
+          <p>Clients reported form submission issues caused by inaccurate reCAPTCHA v3 scoring, including legitimate
+            users being blocked and spam still getting through. This fullstack project focused on improving CAPTCHA reliability by
+            changing when and how CAPTCHA validation was evaluated. Updates included moving reCAPTCHA evaluation to form
+            submission and adding support for hCaptcha as an alternative provider.</p>
         </div>
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li class="ms-3"><a class="text-muted" href="mailto:jesse.t.irwin@gmail.com"><img class="bi" width="24" height="24" src="/img/socials/email.png"></a></li>
-          <li class="ms-3"><a class="text-muted" href="https://github.com/jtirwin2022"><img class="bi" width="24" height="24" src="/img/socials/GitHub-Mark-32px.png"></a></li>
-          <li class="ms-3"><a class="text-muted" href="https://www.linkedin.com/in/jesse-irwin-84019861/"><img class="bi" width="24" height="24" src="/img/socials/LI-In-Bug.png"></a></li>
-        </ul>
+        <div class="col-xs-12 pe-4 pt-3">
+          <h2>CMS Architecture</h2>
+          <p>The CMS is a server-side rendered PHP application using an MVC pattern.</p>
+          <ul>
+            <li>Features are built as modular “cells,” each with its own controller, view, and frontend assets.</li>
+            <li>Forms are rendered on the server, with JavaScript added only where needed to enhance interactivity.</li>
+            <li>Configuration and third-party integrations like CAPTCHA are managed through a centralized registry.</li>
+          </ul>
+        </div>
+        <div class="col-xs-12 pe-4 pt-3">
+          <h2>Languages and Technologies</h2>
+          <ul>
+            <li>JavaScript</li>
+            <li>PHP</li>
+            <li>HTML</li>
+          </ul>
+        </div>
+        <div class="col-xs-12 pe-4 pt-3">
+          <h2>Development Process</h2>
+          <ul>
+            <li>Reviewed client reports and reproduced form submission issues on a staging environment.</li>
+            <li>Researched Google reCAPTCHA documentation to better understand token behavior, scoring, and recommended
+              implementation patterns.</li>
+            <li>Updated form modules so reCAPTCHA v3 evaluation occurred on form submission instead of page load.</li>
+            <li>Improved action naming to give reCAPTCHA more specific context per form.</li>
+            <li>Implemented optional support for hCaptcha.</li>
+            <li>Tested changes on staging and deployed updates to the shared CMS codebase.</li>
+          </ul>
+        </div>
+        <div class="col-xs-12 pe-4 pt-3">
+          <h2>Challenges and Solutions</h2>
+          <p><strong>Challenge:</strong>Legitimate users were failing CAPTCHA due to low scores or expired
+            tokens.<br>
+            <strong>Solution:</strong> Identified that tokens were generated on page load and expired before
+            submission; moved evaluation to the submit event.
+          </p>
+          <p><strong>Challenge:</strong> reCAPTCHA scoring lacked accuracy across different forms.<br>
+            <strong>Solution:</strong> Replaced a generic action name with form-specific actions to give
+            reCAPTCHA more granular data.
+          </p>
+          <p><strong>Challenge:</strong> Working in an unfamiliar part of the CMS codebase.<br>
+            <strong>Solution:</strong> Traced the full request flow across controllers, views, and JavaScript
+            to understand where CAPTCHA logic belonged.
+          </p>
+        </div>
       </div>
-    </footer>
+    </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> 
-    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
-  </body>
+  </main>
+
+  <!-- Footer -->
+  <footer class="container">
+    <div class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <span class="mb-3 mb-md-0 text-muted">© 2026 Jesse Irwin</span>
+      </div>
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-muted" href="mailto:jesse.t.irwin@gmail.com"><img class="bi" width="24"
+              height="24" src="/img/socials/email.png"></a></li>
+        <li class="ms-3"><a class="text-muted" href="https://github.com/jtirwin2022"><img class="bi" width="24"
+              height="24" src="/img/socials/GitHub-Mark-32px.png"></a></li>
+        <li class="ms-3"><a class="text-muted" href="https://www.linkedin.com/in/jesse-irwin-84019861/"><img class="bi"
+              width="24" height="24" src="/img/socials/LI-In-Bug.png"></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+    integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+    async></script>
+</body>
+
 </html>
-

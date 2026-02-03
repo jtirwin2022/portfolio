@@ -38,6 +38,9 @@ body, nav {
 .navbar > .container > .row {
   width: 100%;
 }
+.navbar > .container > .row > div {
+  justify-content: space-between;
+}
 
 .grid-summary {
     grid-template-columns: 1fr 1fr;
@@ -61,6 +64,8 @@ body, nav {
 
 .project-grid-table {
   grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  margin-top: 20px;
 }
 
 #professional-experience .grid-summary {
@@ -103,8 +108,11 @@ body, nav {
     left: unset;
     right: 60px;
 }
-.carousel .carousel-item .compact {
-    padding-right: 40px;
+.carousel .carousel-item .row {
+    gap: 40px;
+}
+.carousel .carousel-item .row .compact {
+    width: calc(33% - 13px);
 }
 
 @media (max-width: 767px) {
@@ -132,6 +140,10 @@ body, nav {
   #professional-experience.desktop {
     display: none;
   }
+  .project-grid-table {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
 }
 
 @media (max-width: 991px) {
@@ -155,6 +167,9 @@ body, nav {
   }
   .bd-placeholder-img-lg {
     font-size: 3.5rem;
+  }
+  #contact p {
+    font-size: 22px;
   }
 }
 
