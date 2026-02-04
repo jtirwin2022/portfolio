@@ -42,14 +42,11 @@ body, nav {
 .navbar > .container > .row > div {
   justify-content: space-between;
   flex-wrap: wrap;
-    padding-left: 24px;
-    padding-right: 8px;
 }
 .navbar.navbar-light .navbar-toggler {
     border: none;
 }
-.navbar .navbar-collapse {
-    height: 100vh;
+.navbar .navbar-collapse.show {
     padding-top: 20px;
     text-align: center;
 }
@@ -520,7 +517,7 @@ body, nav {
 
 .profile-photo {
   display: inline-block;
-  width: 160px;
+  width: 100%;
   border-radius: 10%;
 }
 
