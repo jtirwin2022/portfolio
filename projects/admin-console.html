@@ -63,21 +63,21 @@
         </div>
         <div class="col-xs-12 pe-4 pt-3">
           <h2>Architecture and Design Decisions</h2>
-          <p>The app uses a PHP MVC-style backend with a JavaScript-heavy frontend. PHP is responsible for routing, data
+          <p>The app uses a PHP MVC-style back end with a JavaScript-heavy front end. PHP is responsible for routing, data
             access, and templates, while JavaScript handles user interaction and saving changes asynchronously. The
             editor communicates with the messaging platform through an API.</p>
           <div class="project-grid-table d-grid">
-            <h3>Backend Implementation (PHP)</h3>
-            <p>The backend consists of PHP controllers that expose internal JSON APIs and manage database access.</p>
-            <h3>Frontend Implementation (JavaScript)</h3>
-            <p>The frontend is built using modular, object-oriented JavaScript. UI behavior is split into components
+            <h3>Back-end Implementation (PHP)</h3>
+            <p>The back end consists of PHP controllers that expose internal JSON APIs and manage database access.</p>
+            <h3>Front-end Implementation (JavaScript)</h3>
+            <p>The front end is built using modular, object-oriented JavaScript. UI behavior is split into components
               that manage local state, DOM references (via jQuery), and editor lifecycle logic.</p>
             <h3>Template and Rendering Model</h3>
             <p>HTML is rendered using PHP templates, with JavaScript enhancing and updating the page as users interact
               with it. Data is saved and loaded through AJAX.</p>
             <h3>External API Integration</h3>
             <div>
-              <p>The frontend communicates with:</p>
+              <p>The front end communicates with:</p>
               <ul>
                 <li>Internal PHP APIs</li>
                 <li>External APIs that store message and flow data</li>
@@ -99,7 +99,7 @@
             <li>HTML, CSS</li>
             <li>JSON APIs</li>
           </ul>
-          <p>The codebase follows object-oriented patterns on both the frontend and backend.</p>
+          <p>The codebase follows object-oriented patterns on both the front end and back end.</p>
         </div>
         <div class="col-xs-12 pe-4 pt-3">
           <h2>Development Process and Tools</h2>

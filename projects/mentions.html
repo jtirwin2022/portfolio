@@ -59,7 +59,7 @@
           <h1>@-mention system for project discussions</h1>
           <p>In this fullstack project, I implemented a full @-mention feature within a PHP-based CMS discussion system.
             The project spanned
-            database design, backend models/controllers, frontend UX, and notification workflows.</p>
+            database design, back-end models/controllers, front-end UX, and notification workflows.</p>
           <p>AI tools in Cursor were used to speed up development and refactoring.</p>
         </div>
         <div class="col-xs-12 pe-4 pt-3">
@@ -68,7 +68,7 @@
           </p>
           <ul>
             <li>Real-time autocomplete</li>
-            <li>Backend validation</li>
+            <li>Back-end validation</li>
             <li>Persistent mention tracking</li>
             <li>Email notifications</li>
             <li>Clickable, formatted mentions in the UI</li>
@@ -80,11 +80,11 @@
             <h3>Data Model</h3>
             <p>Created a dedicated relational table&mdash;<code>cmsanl_project_discussion_mention</code>&mdash; instead
               of embedding mentions in JSON or message text.</p>
-            <h3>Backend Implementation (PHP)</h3>
+            <h3>Back-end Implementation (PHP)</h3>
             <p>Introduced a new <code>Discussion_Mention</code> model responsible for creating mention records and
               tracking notification state. Extended the discussion model to parse mentions from text, validate
               collaborators, and more. Updated the controller to extract and process mentions.</p>
-            <h3>Frontend Implementation (JS/CSS)</h3>
+            <h3>Front-end Implementation (JS/CSS)</h3>
             <p>Integrated Tribute.js for @ autocomplete in message textareas. Added key event handlers.</p>
           </div>
         </div>
@@ -92,7 +92,7 @@
           <h2>Challenges & Solutions</h2>
           <p>This project helped me understand a much larger potion of the CMS codebase than I had before, between
             creating a new data model, updating an existing model, working with the controller, and integrating
-            Tribute.js into the frontend. In previous projects, using an AI agent was not always reliable, but I had
+            Tribute.js into the front end. In previous projects, using an AI agent was not always reliable, but I had
             success in this project by spending most of my time with the agent in Plan mode before implementing
             changes in the codebase. Working through all the details of implementation in the MD file before building
             helped both me and the agent (I would think) see the larger-scope effects of changes I was asking to it make.
