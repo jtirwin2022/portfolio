@@ -201,7 +201,9 @@ body, nav {
     padding-bottom: 100px;
   }
   #welcome .featured p {
-    font-size: 30px;
+    font-size: 60px;
+    line-height: 1.3;
+    padding: 20px 0;
   }
   #professional-experience.mobile {
     display: none;
