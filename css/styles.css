@@ -113,10 +113,24 @@ body, nav {
     top: unset;
     justify-content: start;
     width: fit-content;
+    background: #333;
+    opacity: 1;
+    border-radius: 1em;
+}
+.carousel button > span {
+    filter: unset !important;
+    background-size: 50%;
+
 }
 .carousel .carousel-control-prev {
     left: unset;
-    right: 60px;
+    right: 40px;
+}
+.carousel .carousel-control-prev > span {
+    background-position: 43% 50%;
+}
+.carousel .carousel-control-next > span {
+    background-position: 58% 50%;
 }
 .carousel .carousel-item .row {
     gap: 40px;
